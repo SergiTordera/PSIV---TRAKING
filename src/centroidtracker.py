@@ -152,5 +152,5 @@ class CentroidTracker():
 
 			# return the set of trackable objects
 			return self.objects
-	except:
-		print("ERROR")
+		except:
+			print("ERROR")

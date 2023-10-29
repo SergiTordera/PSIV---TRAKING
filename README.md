@@ -10,7 +10,7 @@ output3 (shadow):   resultat profe: (baixades 10/ pujades 3)  -- resultat nostre
 
 output5 (long1):   resultat profe: (baixades 24/ pujades 8)  -- resultat nostre (baixades / pujades ) 
 
-output6 (long2):   resultat profe: (baixades 133/ pujades 6)  -- resultat nostre (baixades / pujades ) 
+output6 (long2):   resultat profe: (baixades 133/ pujades 6)  -- resultat nostre (baixades 153/ pujades 14) 
 
 
 ## Codi
