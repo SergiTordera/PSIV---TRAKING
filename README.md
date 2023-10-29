@@ -8,7 +8,7 @@ output2 (middle):   resultat profe: (baixades 7/ pujades 5)  -- resultat nostre 
 
 output3 (shadow):   resultat profe: (baixades 10/ pujades 3)  -- resultat nostre (baixades 10/ pujades 3 ) 
 
-output5 (long1):   resultat profe: (baixades 24/ pujades 8)  -- resultat nostre (baixades / pujades ) 
+output5 (long1):   resultat profe: (baixades 24/ pujades 8)  -- resultat nostre (baixades 31/ pujades 17) 
 
 output6 (long2):   resultat profe: (baixades 133/ pujades 6)  -- resultat nostre (baixades / pujades ) 
 
