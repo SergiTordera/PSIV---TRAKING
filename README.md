@@ -2,7 +2,7 @@
 
 proves de moment (eliminar)
 
-output7(short):   resultat profe: (baixades 2/ pujades 6)  -- resultat nostre (baixades / pujades ) 
+output7(short):   resultat profe: (baixades 2/ pujades 6)  -- resultat nostre (baixades 2/ pujades 7) 
 
 output2 (middle):   resultat profe: (baixades 7/ pujades 5)  -- resultat nostre (baixades / pujades ) 
 

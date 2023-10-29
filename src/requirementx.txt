@@ -1,0 +1,6 @@
+numpy
+argparse
+cv2
+math
+imutils
+scipy
