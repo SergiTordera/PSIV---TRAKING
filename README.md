@@ -3,9 +3,13 @@
 proves de moment (eliminar)
 
 output7(short):   resultat profe: (baixades 2/ pujades 6)  -- resultat nostre (baixades / pujades ) 
+
 output2 (middle):   resultat profe: (baixades 7/ pujades 5)  -- resultat nostre (baixades / pujades ) 
+
 output3 (shadow):   resultat profe: (baixades 10/ pujades 3)  -- resultat nostre (baixades / pujades ) 
+
 output5 (long1):   resultat profe: (baixades 24/ pujades 8)  -- resultat nostre (baixades / pujades ) 
+
 output6 (long2):   resultat profe: (baixades 133/ pujades 6)  -- resultat nostre (baixades / pujades ) 
 
 
