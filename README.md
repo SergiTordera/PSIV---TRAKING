@@ -57,9 +57,11 @@ La classe *CentroidTraker* també incorpora un sistema per detctar objectes que 
 
 Finalment en la *Figura 4* podem observar un automobil detectat i amb una id assignada el qual mantindra durant tota la seva presencia en el video.
 #### Figura 3
-|Traking |
-|-------------|
-|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/cdd714fc-310a-4702-8390-79c83b4c2c8d)|
+|Traking 1| Traking ...| Traking X|
+|-------------|-------------|-------------|
+|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/d25e34bf-4caf-4d77-826c-8c818829c7f8)|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/cdd714fc-310a-4702-8390-79c83b4c2c8d)|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/3e329801-fd8a-43c3-a855-4072e476f9e3)|
+
+
 
 
 ### Contador direccional
