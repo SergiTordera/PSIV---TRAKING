@@ -29,8 +29,7 @@ Per fer el recompte de quants automòbils pugen o baixen, primer de tot hem limi
 Per tant la "camara de seguretat" o el video es limiteria en aquest espai:
 | Video Rebut | Part interesada |
 | -------------| ------------- | 
-|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/155f3139-2361-498e-a1b3-44270e9edc3e)
-|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/1b3889d9-2b18-469d-8d31-f3c72cb809a2)|
+|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/155f3139-2361-498e-a1b3-44270e9edc3e)|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/1b3889d9-2b18-469d-8d31-f3c72cb809a2)|
 
 ### Background Substraction
 
