@@ -55,6 +55,12 @@ El seu funcionament es senzill, al detectar un ojecte actualitzem el posicioname
 
 La classe *CentroidTraker* també incorpora un sistema per detctar objectes que desapareixen i el desregistra si no els detecta en X frames. D'aquesta forma no ens interfereixen els cotxes que ja han passat i no estan mes en el video.
 
+Finalment en la *Figura 4* podem observar un automobil detectat i amb una id assignada el qual mantindra durant tota la seva presencia en el video.
+#### Figura 3
+|Traking |
+|-------------|
+|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/cdd714fc-310a-4702-8390-79c83b4c2c8d)|
+
 
 ### Contador direccional
 
