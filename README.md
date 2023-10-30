@@ -59,11 +59,6 @@ Tenint el moviment per cada automòbil donada pel *CentroidTraker* simplement ob
 
 
 
-| Step 1 | Step 2 | ... | Step X|
-| -------------| ------------- | -------------|------------- |
-|![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/bcf4c783-b62f-4cb4-9f6c-b8c16ce0bf81) |![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/1b424e79-c026-4b76-8189-d6a398316532)|![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/625a0e57-86bf-45b6-b471-7d6fffea7610)| ![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/89f3ab0f-c652-4472-b6af-79d388eb5a61)|
-
-
 ## Contributors
 * Sergi Tordera - 1608676@uab.cat
 * Eric Alcaraz - 1603504@uab.cat                
