@@ -26,12 +26,15 @@ El projecte conté els següents arxius *.py*:
 ### Zona Detecció
 Per fer el recompte de quants automòbils pugen o baixen, primer de tot hem limitat la zona de vídeo per guanyar velocitat i reduir computacions innecessàries i soroll ja que només interessa els automòbils que pugen o baixen de la part inferior de la carretera, obviant la carretera superior amb moviments d'esquerra a dreta.
 
-Per tant la "camara de seguretat" o el video es limiteria en aquest espai:
+Per tant la "camara de seguretat" o el video es limiteria en aquest espai *Figura 1*:
+|Figura 1|
 | Video Rebut | Part interesada |
 | -------------| ------------- | 
 |![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/155f3139-2361-498e-a1b3-44270e9edc3e)|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/1b3889d9-2b18-469d-8d31-f3c72cb809a2)|
 
 ### Background Substraction
+Per poder detctar el moviment dels cotxes en el vídeo, hem implementat un *background substraction*, per evitar que aquest *background substraction* crei soroll  l'obtenim a partir d'una mitjana dels X frames anteriors en el moment actual del video. Per tant al calcular la diferencia absoluta obtenim els seguents resultats de moviment *Figura 2*
+
 
 ### Detecció d'objectes
 Hem implementat un *background substraction* per detectar moviment al vídeo, aquest *background* l'obtenim a partir d'una mitjana dels X frames anteriors. Una vegada tenim el moviment frame per frame fem una dilatació per fer els objectes detectats més estables i a partir d'aquest punt és quan obtenim les bounding box. Hem decidit realitzar una dilatació amb un kernel 7x3 perquè les regions detectades del moviment dels automòbils moltes pegades queden partides per la meitat horitzontalment, d'aquesta forma amb el kernel 7x3 solucionem aquest problema.
