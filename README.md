@@ -61,15 +61,15 @@ Finalment en la *Figura 4* podem observar un automobil detectat i amb una id ass
 |-------------|-------------|-------------|
 |![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/d25e34bf-4caf-4d77-826c-8c818829c7f8)|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/cdd714fc-310a-4702-8390-79c83b4c2c8d)|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/3e329801-fd8a-43c3-a855-4072e476f9e3)|
 
-
-
-
 ### Contador direccional
 
 La classe *Centroid Traker* ens anira retornant el centroid dels objectes detectats juntament amb la seva id associada. Per tant tenint el moviment per cada automòbil si volem seva la seva direccio ja sigui de pujada o de baixada simplement observem la posició en la qual apareix aquest objecte, si apareix en una posició superior del vídeo i acaba a una posició inferior sabem que l'automòbil baixa, i en cas contrari l'automobil puja. D'aquesta forma, independentment de quin carril arriba o acaba podem saber la seva direcció. Igualment, els moviments que realitza l'automòbil són indiferents, ja que només ens interessen les posicions inicials i finals.
 
-### Aventatges / Limitacions
+### Aventatges i Limitacions referents a la implementació
 
+Utilitzar utilitzar un metode de detcció classic com es el nostre cas, es molt beneficios per poder mantenir una velocitat de processament i detecció en temps real,per altre banda es mes sensible a canvis de iluminació i possibles sorolls, per tant es un sistema amb bons resultats pero pot fallar en precisió. Per altre banda podriem fer utilització d'algoritmes com per exemple YOLO, aquest son molt mes precisos pero amb una velocitat de processament mes lenta, la qual ens costaria poder processar en temps real.
+
+Es per aixó que en hem decantat per la primera opció en aquest projecte, el processat en temps real era molt important per nosaltres per poder mantenir un bon fluxe de conteig. Com que el perill sorgia de tenir una precisió baixa, hem dedicat mes esforços en fer un tracament correcte de les imatges del video rebuda, intentant eliminar sorolls i unificant bounding boxes per tenir la maxima precisió de detecció possible.
 
 
 ## Contributors
