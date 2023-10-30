@@ -47,14 +47,19 @@ Una vegada tenim el moviment frame per frame apliquem un threshold on descartem 
 |Threshold + dilatacio |
 |-------------|
 |![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/effff532-7d3e-4e97-83b1-4cdbfed027f0)|
-
-
 ### Tracker
 
-### Contador direccional
-Fem un filtratge de les bounding box per les seves mides excloent com per exemple vianants o ombres. Finalment per tenir un control de la identitat dels automòbils que van apareixent hem utilitzat el *CentroidTraker*.
+Ara ja podriem detectar les bounding box de les figures per les seves mides excloent per exemple vianants o ombres.Pero a nosaltres apart de ser capaços de detctar els objectes ens interesa poder mantenir un "traking" del ojecte durant el seu transcurs en el video. Per fer-ho i tenir un control de la identitat dels automòbils que van apareixent hem utilitzat la classe *CentroidTraker* la cual implementa un traker per objectes.
 
-Tenint el moviment per cada automòbil donada pel *CentroidTraker* simplement observem la posició en la qual apareix aquest objecte, si apareix en una posició superior del vídeo i acaba a una posició inferior sabem que l'automòbil baixa, i és una pujada en el cas contrari. D'aquesta forma, independentment de quin carril arriba o acaba podem saber la seva direcció. Igualment, els moviments que realitza l'automòbil són indiferents, ja que només ens interessen les posicions inicials i finals.
+El seu funcionament es senzill, al detectar un ojecte actualitzem el posicionament de la seva bounding box i ens quedem amb el seu centroid. Si no tenim objectes detectats l'afegim i si en tenim ja de dectatas intentem associarlo a algun dels existents a traves de la distancia euclidiana mes petita. Despres de fer totes les comprobacions necessaries, registrarem l'objecte com a nou si no esta associoat a cap existent, o li actualitzarem els seus centroids.
+
+La classe *CentroidTraker* també incorpora un sistema per detctar objectes que desapareixen i el desregistra si no els detecta en X frames. D'aquesta forma no ens interfereixen els cotxes que ja han passat i no estan mes en el video.
+
+
+### Contador direccional
+
+La classe *Centroid Traker* ens anira retornant el centroid dels objectes detectats juntament amb la seva id associada. Per tant tenint el moviment per cada automòbil si volem seva la seva direccio ja sigui de pujada o de baixada simplement observem la posició en la qual apareix aquest objecte, si apareix en una posició superior del vídeo i acaba a una posició inferior sabem que l'automòbil baixa, i en cas contrari l'automobil puja. D'aquesta forma, independentment de quin carril arriba o acaba podem saber la seva direcció. Igualment, els moviments que realitza l'automòbil són indiferents, ja que només ens interessen les posicions inicials i finals.
+
 ### Aventatges / Limitacions
 
 
