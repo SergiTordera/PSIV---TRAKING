@@ -41,7 +41,14 @@ Per poder detctar el moviment dels cotxes en el vídeo, hem implementat un *back
 |![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/0c582af3-47ab-4690-99bb-431024e1bdd1)|
 
 ### Detecció d'objectes
-Hem implementat un *background substraction* per detectar moviment al vídeo, aquest *background* l'obtenim a partir d'una mitjana dels X frames anteriors. Una vegada tenim el moviment frame per frame fem una dilatació per fer els objectes detectats més estables i a partir d'aquest punt és quan obtenim les bounding box. Hem decidit realitzar una dilatació amb un kernel 7x3 perquè les regions detectades del moviment dels automòbils moltes pegades queden partides per la meitat horitzontalment, d'aquesta forma amb el kernel 7x3 solucionem aquest problema.
+Una vegada tenim el moviment frame per frame apliquem un threshold on descartem tots els pixels amb valor inferior a 35 (els assigenm de color negre )  i fem una dilatació per fer els objectes detectats més estables i a partir d'aquest punt és quan obtenim les bounding box. Hem decidit realitzar una dilatació amb un kernel 7x3 (vertical) perquè les regions detectades del moviment dels automòbils moltes pegades queden partides per la meitat horitzontalment a causa de la trsanperenica del vidres frontals i darrers, d'aquesta forma amb el kernel 7x3 solucionem aquest problema com podem observar a la *Figura 3*.
+
+#### Figura 3
+|Threshold + dilatacio |
+|-------------|
+|![image](https://github.com/SergiTordera/PSIV---TRAKING/assets/61145059/effff532-7d3e-4e97-83b1-4cdbfed027f0)|
+
+
 ### Tracker
 
 ### Contador direccional
