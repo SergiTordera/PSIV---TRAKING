@@ -71,6 +71,18 @@ Utilitzar utilitzar un metode de detcció classic com es el nostre cas, es molt 
 
 Es per aixó que en hem decantat per la primera opció en aquest projecte, el processat en temps real era molt important per nosaltres per poder mantenir un bon fluxe de conteig. Com que el perill sorgia de tenir una precisió baixa, hem dedicat mes esforços en fer un tracament correcte de les imatges del video rebuda, intentant eliminar sorolls i unificant bounding boxes per tenir la maxima precisió de detecció possible.
 
+## Resultats
+
+| Video | Real Up | Real Down | Dilate Up | Dilate Down | Close Up | Close down |
+|--------|-------| -----------| ---------- | ----------| ----------| -----------|
+| output7-short | 2 | 6| 2| 6| 2| 7|
+| output2-middle | 7 | 5| 8| 5| 9| 5|
+| output3-shadow | 10 | 3| 10| 3| 10| 3|
+| output5-long1 | 24 | 8| 30| 14| 34| 18|
+| output6-long2 | 133 | 6| 129| 11| 154| 24|
+
+
+
 
 ## Contributors
 * Sergi Tordera - 1608676@uab.cat
