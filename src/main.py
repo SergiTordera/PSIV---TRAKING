@@ -26,8 +26,13 @@ def compute_substraction(frame, last_frames, window=10):
 def binarize_and_detection(frame, threshold_value=25, kernel_size=(7,3)):
     _,thresh = cv2.threshold(frame, threshold_value, 255, cv2.THRESH_BINARY)
     kernel = np.ones(kernel_size, np.uint8)
-    thresh = cv2.dilate(thresh, None, iterations=6)
-    contours, heirarchy = cv2.findContours(thresh,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+    # dilate = cv2.dilate(thresh, kernel, iterations=6)
+    # kernel = np.ones((5, 5), np.uint8)
+    # erode = cv2.erode(dilate, kernel, iterations=6)
+    close = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel, iterations=6)
+    close = cv2.morphologyEx(close, cv2.MORPH_CLOSE, kernel, iterations=6)
+    close = cv2.morphologyEx(close, cv2.MORPH_CLOSE, kernel, iterations=6)
+    contours, heirarchy = cv2.findContours(close,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
     return contours
 
 
@@ -107,7 +112,7 @@ def main(path, debug=True):
         fps+=1
         if fps % 2 == 0:
             stream.grab()
-    #fps.stop()
+    # fps.stop()
     
     
     stream.release()
@@ -119,5 +124,5 @@ def main(path, debug=True):
 
 
 if __name__ == "__main__":
-    path_name = "output7.mp4"
-    main(path=path_name)
+    path_name = "output6.mp4"
+    main(path=path_name, debug=True)
